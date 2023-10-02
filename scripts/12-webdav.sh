@@ -31,7 +31,7 @@
 #	id (print real and effective user and group IDs)
 #	groups (print the groups a user is in)
 #	sudo cat /etc/groups
-#	sudo mount -v -t davfs -o rw,noexec,nosuid,nodev,noauto,uid=1000,gid=1000 https://webdav.pti.intra /mnt/davs/ (mount a filesystem)
+#	sudo mount -v -t davfs -o rw,noexec,nosuid,nodev,noauto,uid=1000,gid=1000 https://webdav.arq.intra /mnt/davs/ (mount a filesystem)
 #		Username: vaamonde
 #		Password: pti@2018
 #	sudo mount | grep davfs (mount a filesystem)
@@ -39,10 +39,10 @@
 #
 # Gerenciador de Arquivos Neno
 #	Ctrl+L
-#		davs://vaamonde@webdav.pti.intra/
+#		davs://vaamonde@webdav.arq.intra/
 #
 # Navegadores de Internet (Firefox, Chrome, Edge, etc...)
-#	URL: https://webdav.pti.intra/
+#	URL: https://webdav.arq.intra/
 #		Username: vaamonde
 #		Password: pti@2018
 #
@@ -52,10 +52,10 @@
 #			Adicionar Local de Rede
 #				<Avançar>;
 #				Escolher um Local de Rede Personalizado <Avançar>;
-#				Endereço de Rede ou na Internet: https://webdav.pti.intra <Avançar>;
+#				Endereço de Rede ou na Internet: https://webdav.arq.intra <Avançar>;
 #					Nome do usuário: vaamonde
 #					Senha do usuário: pti@2018 <OK>
-#				Digite o nome para este local de rede: webdav.pti.intra <Avançar>;
+#				Digite o nome para este local de rede: webdav.arq.intra <Avançar>;
 #				Abrir esse local de rede quando eu clicar em Concluir <Concluir>.
 #
 # Windows Powershell:
@@ -70,9 +70,9 @@
 #
 #	OBSERVAÇÃO IMPORTANTE: o comando New-PSDriver do Powershell não aparece o compartilhamento no Windows Explorer
 #	já o comando Net Use aparece no compartilhamento do Windows Explorer (recomendado)
-#	New-PSDrive -Name W -PSProvider FileSystem -Root \\webdav.pti.intra@SSL\webdav -Credential vaamonde
+#	New-PSDrive -Name W -PSProvider FileSystem -Root \\webdav.arq.intra@SSL\webdav -Credential vaamonde
 #		cd w:
-#	net use X: https://webdav.pti.intra /USER:vaamonde pti@2018
+#	net use X: https://webdav.arq.intra /USER:vaamonde pti@2018
 #		cd x:
 #
 # Arquivo de configuração dos parâmetros utilizados nesse script

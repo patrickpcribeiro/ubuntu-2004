@@ -62,7 +62,7 @@
 #					Repeat Password: pti@2018: Next;
 # Step 7 -	Create the first source for syslog messages
 #				First Syslog Source
-#					Name of the Source: ptispo01ws01
+#					Name of the Source: arqeso01ws01
 #					Source Type: MYSQL Native
 #					Select View: Syslog Fields
 #				Database Type Options

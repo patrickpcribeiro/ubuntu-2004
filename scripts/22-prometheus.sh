@@ -24,8 +24,8 @@
 # Projeto Github Windows Exporter...: https://github.com/prometheus-community/windows_exporter
 #
 # Informações que serão solicitadas na configuração via Web do Prometheus
-# URL padrão do Prometheus: http://pti.intra:9100
-# URL das targets do Prometheus: http://pti.intra:9100/targets
+# URL padrão do Prometheus: http://arq.intra:9100
+# URL das targets do Prometheus: http://arq.intra:9100/targets
 #
 # Instalação e configuração da coleta de métricas do Prometheus no Linux e Windows
 #

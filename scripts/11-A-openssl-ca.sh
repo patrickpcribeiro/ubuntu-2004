@@ -56,7 +56,7 @@
 #				<OK>
 #			Autoridades
 #				Bora para Pratica
-#					ptispo01ws01.pti.intra
+#					arqeso01ws01.arq.intra
 #
 # Instalação da Autoridade Certificadora CA no Google Chrome (GNU/Linux)
 # chrome://settings/certificates
@@ -67,7 +67,7 @@
 #			Yes: Confiar neste certificado para a identificação de criadores de software
 #		<OK>
 #		org-Bora para Pratica
-#			ptispo01ws01.pti.intra
+#			arqeso01ws01.arq.intra
 #	chrome://restart
 #
 # Instalação da Autoridade Certificadora CA no Microsoft Edge (GNU/Linux)
@@ -89,7 +89,7 @@
 # Google Chrome, se você já importou o certificado no Google Chrome na hora de importar
 # o certificado no Navegador Opera a seguinte mensagem de erro aparece para você: 
 # Certification Authority Import Error: The file contained one certificate, which was not 
-# imported: ptispo01ws01.pti.intra: Certificate already exists.
+# imported: arqeso01ws01.arq.intra: Certificate already exists.
 # Abrir o Menu de Configuração Fácil
 #	Ir para as configurações completas do navegador
 #		Configurações de pesquisa: certificado
@@ -102,7 +102,7 @@
 #							Yes: Confie neste certificado para identificar fabricantes de software
 #						<OK>
 #					org-Bora para Pratica
-#						ptispo01ws01.pti.intra
+#						arqeso01ws01.arq.intra
 #
 # Instalação da Autoridade Certificadora CA no GNU/Linux (Linux Mint ou Ubuntu)
 # Pasta: Download
@@ -134,7 +134,7 @@
 #		Autoridades de Certificação Raiz Confiáveis
 #			Certificados
 #				Emitido para:
-#					ptispo01ws01.pti.intra
+#					arqeso01ws01.arq.intra
 #
 # Arquivo de configuração dos parâmetros utilizados nesse script
 source 00-parametros.sh
@@ -356,8 +356,8 @@ echo -e "Criando o arquivo CSR (Certificate Signing Request), confirme as mensag
 	# 	Locality Name (eg, city): Sao Paulo <-- pressione <Enter>
 	# 	Organization Name (eg, company): Bora para Pratica <-- pressione <Enter>
 	# 	Organization Unit Name (eg, section): Procedimentos em TI <-- pressione <Enter>
-	# 	Common Name (eg, server FQDN or YOUR name): ptispo01ws01.pti.intra <-- pressione <Enter>
-	# 	Email Address: pti@pti.intra <-- pressione <Enter>
+	# 	Common Name (eg, server FQDN or YOUR name): arqeso01ws01.arq.intra <-- pressione <Enter>
+	# 	Email Address: pti@arq.intra <-- pressione <Enter>
 	#
 	openssl req -new -$CRIPTOCERT -nodes -key /etc/ssl/private/$DOMINIONETBIOS-ca.key -out \
 	/etc/ssl/requests/$DOMINIONETBIOS-ca.csr -config /etc/ssl/ca.conf
@@ -386,8 +386,8 @@ echo -e "Criando o arquivo CRT (Certificate Request Trust), confirme as mensagen
 	# 	Locality Name (eg, city): Sao Paulo <-- pressione <Enter>
 	# 	Organization Name (eg, company): Bora para Pratica <-- pressione <Enter>
 	# 	Organization Unit Name (eg, section): Procedimentos em TI <-- pressione <Enter>
-	# 	Common Name (eg, server FQDN or YOUR name): pti.intra <-- pressione <Enter>
-	# 	Email Address: pti@pti.intra <-- pressione <Enter>
+	# 	Common Name (eg, server FQDN or YOUR name): arq.intra <-- pressione <Enter>
+	# 	Email Address: pti@arq.intra <-- pressione <Enter>
 	#
 	openssl req -new -x509 -$CRIPTOCERT -days 3650 -in /etc/ssl/requests/$DOMINIONETBIOS-ca.csr -key \
 	/etc/ssl/private/$DOMINIONETBIOS-ca.key -out /etc/ssl/newcerts/$DOMINIONETBIOS-ca.crt -config /etc/ssl/ca.conf

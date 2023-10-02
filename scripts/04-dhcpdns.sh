@@ -37,19 +37,19 @@
 # Linux Mint Terminal: Ctrl+Alt+T
 # 	sudo NetworkManager --print-config (network management daemon)
 # 	sudo nmcli device status (command-line tool for controlling NetworkManager)
-# 	sudo nmcli device show enp0s3 (command-line tool for controlling NetworkManager)
-# 	sudo networkctl status enp0s3 Query the status of network links)
-# 	sudo ifconfig enp0s3 (configure a network interface)
-# 	sudo ip address show enp0s3 (show / manipulate routing, network devices, interfaces and tunnels)
+# 	sudo nmcli device show ens160 (command-line tool for controlling NetworkManager)
+# 	sudo networkctl status ens160 Query the status of network links)
+# 	sudo ifconfig ens160 (configure a network interface)
+# 	sudo ip address show ens160 (show / manipulate routing, network devices, interfaces and tunnels)
 # 	sudo route -n (show/manipulate IP routing table)
 # 	sudo systemd-resolve --status (Resolve domain names, IPV4 and IPv6 addresses, DNS resource records, and services)
-# 	sudo dhclient -r enp0s3 (Dynamic Host Configuration Protocol Client)
-# 	sudo dhclient enp0s3 (Dynamic Host Configuration Protocol Client)
+# 	sudo dhclient -r ens160 (Dynamic Host Configuration Protocol Client)
+# 	sudo dhclient ens160 (Dynamic Host Configuration Protocol Client)
 # 	sudo cat /var/lib/dhcp/dhclient.leases (DHCP client lease database)
-#	nslookup pti.intra (query Internet name servers interactively)
-#	dig pti.intra (DNS lookup utility)
-#	host pti.intra (DNS lookup utility)
-#	ping pti.intra (send ICMP ECHO_REQUEST to network hosts)
+#	nslookup arq.intra (query Internet name servers interactively)
+#	dig arq.intra (DNS lookup utility)
+#	host arq.intra (DNS lookup utility)
+#	ping arq.intra (send ICMP ECHO_REQUEST to network hosts)
 #
 # Windows Powershell: 
 #	ipconfig /all
@@ -58,11 +58,11 @@
 #	netsh interface show interface
 #	netsh interface ip show interface
 #	netsh interface ip show config
-#	nslookup pti.intra
+#	nslookup arq.intra
 #	ipconfig /displaydns
-#	ping pti.intra
-#	Resolve-DnsName pti.intra
-#	Test-Connection pti.intra
+#	ping arq.intra
+#	Resolve-DnsName arq.intra
+#	Test-Connection arq.intra
 #
 # Arquivo de configuração dos parâmetros utilizados nesse script
 source 00-parametros.sh

@@ -25,7 +25,7 @@
 # 01. Select your OpenProject Edition: default <OK>
 # 02. Do you want to use this wizard to help setup your PostgreSQL database? install <OK>
 # 03. Do you want to use this wizard to help setup your Web Server? install <OK>
-# 04. Your fully qualified domain name: ptispo01ws01.pti.intra (172.16.1.20) <OK>
+# 04. Your fully qualified domain name: arqeso01ws01.arq.intra (10.0.0.20) <OK>
 # 05. Server path prefix: /openproject <OK>
 # 06. Do you want to enable SSL for your Web Server? no <OK>
 # 07. Do yoi want to use this wizard to setup Subversion repositories support for openproject? install <OK>

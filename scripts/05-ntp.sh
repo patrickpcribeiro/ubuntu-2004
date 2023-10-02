@@ -43,8 +43,8 @@
 # Configuração do NTP Client no GNU/Linux ou Microsoft Windows
 # Linux Mint Terminal: Ctrl+Alt+T
 #	sudo apt install ntpdate ntpstat
-# 	sudo ntpdate -s 172.16.1.20 ou ntp.pti.intra (set the date and time via NTP)
-#	sudo ntpdate -dquv ntp.pti.intra (update date and time via NTP)
+# 	sudo ntpdate -s 10.0.0.20 ou ntp.arq.intra (set the date and time via NTP)
+#	sudo ntpdate -dquv ntp.arq.intra (update date and time via NTP)
 #	sudo ntpq -pn (standard NTP query program)
 #	sudo ntpq -c sysinfo (standard NTP query program)
 #	sudo vim /etc/systemd/timesyncd.conf (Network Time Synchronization configuration files)
@@ -61,13 +61,13 @@
 # Windows Powershell: 
 #	Painel de Controle, Relógio e Região, Data e Hora, Horário de Internet
 #		Alterar Configurações
-#			Servidor: ntp.pti.intra <Atualizar Agora>
+#			Servidor: ntp.arq.intra <Atualizar Agora>
 #	date
 #	time (somente no CMD - PowerShell não funciona)
-#	net time \\172.16.1.20 /set /yes (Somente após instalar o SAMBA-4, WINS e NetBIOS)
+#	net time \\10.0.0.20 /set /yes (Somente após instalar o SAMBA-4, WINS e NetBIOS)
 #	w32tm /query /status
 #	w32tm /query /configuration
-#	w32tm /config /syncfromflags:manual /manualpeerlist:”ntp.pti.intra” /reliable:yes /update
+#	w32tm /config /syncfromflags:manual /manualpeerlist:”ntp.arq.intra” /reliable:yes /update
 #
 # Arquivo de configuração dos parâmetros utilizados nesse script
 source 00-parametros.sh

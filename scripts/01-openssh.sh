@@ -32,12 +32,12 @@
 # Acesso remoto utilizando o GNU/Linux ou Microsoft Windows
 #
 # Linux Mint Terminal: Ctrl+Alt+T
-# 	ssh vaamonde@172.16.1.20
-#	ssh vaamonde@ssh.pti.intra
+# 	ssh vaamonde@10.0.0.20
+#	ssh vaamonde@ssh.arq.intra
 #
 # Windows Powershell: Menu, Powershell 
-#	ssh vaamonde@172.16.1.20
-#	ssh vaamonde@ssh.pti.intra
+#	ssh vaamonde@10.0.0.20
+#	ssh vaamonde@ssh.arq.intra
 #
 # Linux Mint ou Windows:
 #	apt install putty putty-tools
@@ -59,7 +59,7 @@
 #		Enter file in which to save the key (/home/vaamonde/.ssh/id_rsa): /home/vaamonde/.ssh/vaamonde <Enter>
 #		Enter passphrase (empty for no passphrase): <Enter>
 #		Enter same passphrase again: <Enter>
-#	ssh-copy-id vaamonde@172.16.1.20
+#	ssh-copy-id vaamonde@10.0.0.20
 #
 # Importando os pares de chaves Públicas/Privadas utilizando o Powershell
 # Windows Powershell: Menu, Powershell 

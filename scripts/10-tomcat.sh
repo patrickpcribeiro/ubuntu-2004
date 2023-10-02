@@ -32,10 +32,10 @@
 # Site Oficial do Projeto Payara: https://www.payara.fish
 #
 # Administrando o Tomcat9 via Navegador
-#	URL: http://pti.intra:8080
-#	Manager Webapp: http://pti.intra:8080/manager/
-#	Aplicativo Agenda: http://pti.intra:8080/agenda/
-#	PhpMyAdmin: http://pti.intra/phpmyadmin
+#	URL: http://arq.intra:8080
+#	Manager Webapp: http://arq.intra:8080/manager/
+#	Aplicativo Agenda: http://arq.intra:8080/agenda/
+#	PhpMyAdmin: http://arq.intra/phpmyadmin
 #
 # Arquivo de configuração dos parâmetros utilizados nesse script
 source 00-parametros.sh

@@ -11,13 +11,13 @@ Data de atualização: 26/04/2023
 Versão: 0.11
 Testado e homologado para a versão do Ubuntu Server 20.04.x LTS x64
 
-Network: 172.16.1.0/24
+Network: 10.0.0.0/24
 CIDR: 24 (255.255.255.0)
-IP Address Server: 172.16.1.20
-IP Address Gateway: 172.16.1.254
-IP Address DNS: 8.8.8.8, 8.8.4.4, 172.16.1.254, 172.16.1.20
-Hostname: ptispo01ws01
-Domain: pti.intra
+IP Address Server: 10.0.0.20
+IP Address Gateway: 10.0.0.254
+IP Address DNS: 8.8.8.8, 8.8.4.4, 10.0.0.254, 10.0.0.20
+Hostname: arqeso01ws01
+Domain: arq.intra
 
 SCRIPT                        PROTOCOLO/PORTA/SERVIÇO (Daemon)
 01-openssh.sh --------------> TCP 22 (sshd) e TCP 4200 (shellinaboxd HTTPS)

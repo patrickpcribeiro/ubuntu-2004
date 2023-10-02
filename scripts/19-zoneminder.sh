@@ -42,7 +42,7 @@
 # Site Oficial do Projeto MotionEye: https://github.com/motioneye-project/motioneye
 #
 # Informações que serão solicitadas na configuração via Web do ZoneMinder
-# URL: https://pti.intra/zm
+# URL: https://arq.intra/zm
 # 	Privacy: Accept: Apply
 #
 # Configurações básicas do ZoneMinder

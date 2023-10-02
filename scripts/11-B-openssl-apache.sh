@@ -256,8 +256,8 @@ echo -e "Criando o arquivo CSR (Certificate Signing Request), confirme as mensag
 	# 	Locality Name (eg, city): Sao Paulo <-- pressione <Enter>
 	# 	Organization Name (eg, company): Bora para Pratica <-- pressione <Enter>
 	# 	Organization Unit Name (eg, section): Procedimentos em TI <-- pressione <Enter>
-	# 	Common Name (eg, server FQDN or YOUR name): pti.intra <-- pressione <Enter>
-	# 	Email Address: pti@pti.intra <-- pressione <Enter>
+	# 	Common Name (eg, server FQDN or YOUR name): arq.intra <-- pressione <Enter>
+	# 	Email Address: pti@arq.intra <-- pressione <Enter>
 	#
 	openssl req -new -$CRIPTOCERT -nodes -key /etc/ssl/private/apache2.key -out \
 	/etc/ssl/requests/apache2.csr -extensions v3_req -config /etc/ssl/apache2.conf

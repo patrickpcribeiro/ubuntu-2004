@@ -132,7 +132,7 @@ nos Logs na inicialização do sistema.
 STATUS=RESOLVIDO
 
 0014 - Falha de Permissão Negada (Permission denied) no arquivo: /var/log/cron.log, após executar a verificação de erros
-no arquivo do Syslog com o comando: sudo grep -i error /var/log/syslog, recebendo a mensagem: Mar 23 09:58:25 ptispo01ws01 
+no arquivo do Syslog com o comando: sudo grep -i error /var/log/syslog, recebendo a mensagem: Mar 23 09:58:25 arqeso01ws01 
 rsyslogd: file '/var/log/cron.log': open error: Permission denied [v8.2001.0 try https://www.rsyslog.com/e/2433 ], falha
 relacionada a permissão do arquivo, permissão padrão: -rw-r--r-- 1 root root 0 fev 23 09:57 /var/log/cron.log, alterado
 o dono do arquivo para: sudo chown -v syslog.root /var/log/cron.log, aplicado Path de correção no script: 01-openssh.sh
@@ -186,13 +186,13 @@ o processo de instalação/atualização ficou muito mais rápido, testes feito 
 o problema de lentidão no processo de instalação do Kernel e aplicação do Patch de Segurança.
 STATUS=RESOLVIDO
 
-0004 - pti.intra.hosts - Linhas 24 (MX) e 29 (MAIL) Correção da falha do Bind9 referente a mensagens no Systemctl de: MX is 
-a CNAME (illegal), alterado as configurações do MX Mail no arquivo de Zona de Pesquisa direta: pti.intra.hosts, retirado: 
-10 mail.pti.intra. deixado só: 10 mail, mudado a linha: mail IN CNAME ptispo01ws01 para: mail IN A 172.16.1.20.
+0004 - arq.intra.hosts - Linhas 24 (MX) e 29 (MAIL) Correção da falha do Bind9 referente a mensagens no Systemctl de: MX is 
+a CNAME (illegal), alterado as configurações do MX Mail no arquivo de Zona de Pesquisa direta: arq.intra.hosts, retirado: 
+10 mail.arq.intra. deixado só: 10 mail, mudado a linha: mail IN CNAME arqeso01ws01 para: mail IN A 10.0.0.20.
 STATUS=RESOLVIDO
 
-0003 - pti.intra.hosts - Linha 39 (linha em branco) Correção da falha do Bind9 referente a mensagens no Systemctl de: file 
-does not end with newline, adicionado uma linha no final do arquivo da Zona de Pesquisa direta: pti.intra.hosts (O Bind9 
+0003 - arq.intra.hosts - Linha 39 (linha em branco) Correção da falha do Bind9 referente a mensagens no Systemctl de: file 
+does not end with newline, adicionado uma linha no final do arquivo da Zona de Pesquisa direta: arq.intra.hosts (O Bind9 
 espera uma nova linha no final de seus arquivos de configuração. Adicione uma nova linha no final do arquivo após a entrada 
 que você adicionou manualmente).
 STATUS=RESOLVIDO

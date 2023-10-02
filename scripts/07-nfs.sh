@@ -24,24 +24,24 @@
 # Utilização do NFS Client no GNU/Linux ou Microsoft Windows
 # Linux Mint Terminal: Ctrl+Alt+T
 # 	sudo apt update && sudo apt install nfs-common
-#	sudo rpcinfo -p nfs.pti.intra (report RPC information)
-#	sudo showmount -e nfs.pti.intra (show mount information for an NFS server)
+#	sudo rpcinfo -p nfs.arq.intra (report RPC information)
+#	sudo showmount -e nfs.arq.intra (show mount information for an NFS server)
 #	sudo mkdir -v /mnt/nfs (make directories)
-#	sudo mount -v nfs.pti.intra:/mnt/nfs /mnt/nfs (mount a filesystem)
+#	sudo mount -v nfs.arq.intra:/mnt/nfs /mnt/nfs (mount a filesystem)
 #	sudo mount | grep nfs (mount a filesystem)
 #	sudo umount /mnt/nfs (umount a filesystem)
 #	sudo nfsiostat -p (emulate iostat for NFS mount points using)
 #
 # Windows CMD (Command Prompt):
 #	Painel de Controle, Programas, Ativar ou Desativar Recursos do Windows, Serviço de NFS, Cliente NFS	
-#	rpcinfo -p nfs.pti.intra
-#	showmount -e nfs.pti.intra
-#	mount -o anon nfs.pti.intra:/mnt/nfs z:
+#	rpcinfo -p nfs.arq.intra
+#	showmount -e nfs.arq.intra
+#	mount -o anon nfs.arq.intra:/mnt/nfs z:
 #	mount
 #	umount z:
 #
 # Windows Powershell: (Infelizmente não está funcionando corretamente, buscando solução)
-#	New-PSDrive -Name W -PSProvider FileSystem -Root "\\nfs.pti.intra:\mnt\nfs"
+#	New-PSDrive -Name W -PSProvider FileSystem -Root "\\nfs.arq.intra:\mnt\nfs"
 #	Get-PSDrive W
 #	Remove-PSDrive W
 #

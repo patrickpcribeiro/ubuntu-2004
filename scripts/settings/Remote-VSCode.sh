@@ -36,7 +36,7 @@ Ctrl + Shift + "``" Acento Grave ou Crase
 netstat -an | grep 52698
 #
 # Quinta Etapa: Instalação do Rmate no Ubuntu Server 18.04.x LTS
-ssh vaamonde@172.16.1.20
+ssh vaamonde@10.0.0.20
 sudo apt update
 sudo apt install python-pip
 sudo pip install rmate
@@ -51,7 +51,7 @@ exit
 # 52698: 	Porta do Túnel Virtual que será criada no lado do servidor
 # 127.0.0.1: Endereço de Loopback do lado servidor e cliente
 # 52698: 	Porta Padrão do Túnel Virtual que será criada no lado do cliente utilizado pelo Remote VSCode
-ssh -R 52698:127.0.0.1:52698 vaamonde@172.16.1.20
+ssh -R 52698:127.0.0.1:52698 vaamonde@10.0.0.20
 netstat -an | grep 52698
 #
 # Sétima Etapa: Editando arquivos remotamente com o Remote VSCode

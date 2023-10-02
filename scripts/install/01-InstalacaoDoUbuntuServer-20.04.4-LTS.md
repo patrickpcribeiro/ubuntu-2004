@@ -111,14 +111,14 @@ Instalação do Ubuntu Server: https://ubuntu.com/server/docs/installation
 	_ 		Variant: [English (US)] ou [Portuguese (Brazil)]
 	_ 	<Done>
 	_ 04. Network connections
-	_ 		enp0s3 eth <Enter>
+	_ 		ens160 eth <Enter>
 	_ 			Edit IPv4 <Enter>
 	_ 				IPv4 Method: Manual <Enter>
-	_ 					Subnet: 172.16.1.0/24 <Tab>
-	_ 					Address: 172.16.1.20 <Tab>
-	_ 					Gateway: 172.16.1.254 <Tab>
-	_ 					Name servers: 172.16.1.254 <Tab>
-	_ 					Search domains: pti.intra
+	_ 					Subnet: 10.0.0.0/24 <Tab>
+	_ 					Address: 10.0.0.20 <Tab>
+	_ 					Gateway: 10.0.0.254 <Tab>
+	_ 					Name servers: 10.0.0.254 <Tab>
+	_ 					Search domains: arq.intra
 	_ 				<Save>
 	_ 	<Done>
 	_ 05. Configure proxy
@@ -145,7 +145,7 @@ Instalação do Ubuntu Server: https://ubuntu.com/server/docs/installation
 	_		<Continue>
 	_ 09. Profile setup
 	_ 		Your name: Robson Vaamonde <Tab>
-	_ 		Your server's name: ptispo01ws01 <Tab>
+	_ 		Your server's name: arqeso01ws01 <Tab>
 	_ 		Pick a username: vaamonde <Tab>
 	_ 		Choose a passwords: pti@2018 <Tab>
 	_ 		Confirm your passwords: pti@2018

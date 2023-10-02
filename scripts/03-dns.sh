@@ -30,20 +30,20 @@
 #
 # Testando o DNS no GNU/Linux ou Microsoft Windows
 # Linux Mint Terminal: Ctrl+Alt+T 
-#	nslookup pti.intra (query Internet name servers interactively)
-#	dig pti.intra (DNS lookup utility)
-#	host pti.intra (DNS lookup utility)
-#	ping pti.intra (send ICMP ECHO_REQUEST to network hosts)
+#	nslookup arq.intra (query Internet name servers interactively)
+#	dig arq.intra (DNS lookup utility)
+#	host arq.intra (DNS lookup utility)
+#	ping arq.intra (send ICMP ECHO_REQUEST to network hosts)
 #
 # Windows Powershell.: 
-#	nslookup pti.intra
-#	nslookup 172.16.1.20
-#	nslookup ptispo01ws01
-#	nslookup ptispo01ws01.pti.intra
+#	nslookup arq.intra
+#	nslookup 10.0.0.20
+#	nslookup arqeso01ws01
+#	nslookup arqeso01ws01.arq.intra
 #	ipconfig /displaydns
-#	ping pti.intra
-#	Resolve-DnsName pti.intra
-#	Test-Connection pti.intra
+#	ping arq.intra
+#	Resolve-DnsName arq.intra
+#	Test-Connection arq.intra
 #
 # Arquivo de configuração dos parâmetros utilizados nesse script
 source 00-parametros.sh
@@ -227,12 +227,12 @@ echo -e "Atualizando os arquivos de configuração do Bind DNS Server, aguarde..
 	mv -v /etc/bind/rndc.key /etc/bind/rndc.key.old &>> $LOG
 	mv -v /etc/default/named /etc/default/named.old &>> $LOG
 	cp -v conf/dns/{named.conf,named.conf.local,named.conf.options,named.conf.default-zones,rndc.key} /etc/bind/ &>> $LOG
-	cp -v conf/dns/{pti.intra.hosts,172.16.1.rev} /var/lib/bind/ &>> $LOG
+	cp -v conf/dns/{arq.intra.hosts,172.16.1.rev} /var/lib/bind/ &>> $LOG
 	cp -v conf/dns/{dnsupdate-cron,rndcupdate-cron} /etc/cron.d/ &>> $LOG
 	cp -v conf/dns/named /etc/default/ &>> $LOG
 	cp -v conf/dns/rndcstats /etc/logrotate.d/ &>> $LOG
 	chown -v root:bind /etc/bind/rndc.key &>> $LOG
-	chown -v root:bind /var/lib/bind/{pti.intra.hosts,172.16.1.rev} &>> $LOG
+	chown -v root:bind /var/lib/bind/{arq.intra.hosts,172.16.1.rev} &>> $LOG
 echo -e "Arquivos atualizados com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
@@ -274,12 +274,12 @@ echo -e "Editando o arquivo de configuração rndc.key, pressione <Enter> para c
 echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Editando o arquivo de configuração pti.intra.hosts, pressione <Enter> para continuar."
+echo -e "Editando o arquivo de configuração arq.intra.hosts, pressione <Enter> para continuar."
 	# opção do comando: &>> (redirecionar a saída padrão)
 	# opção do comando read: -s (Do not echo keystrokes)
 	read -s
-	vim /var/lib/bind/pti.intra.hosts
-	named-checkzone $DOMAIN /var/lib/bind/pti.intra.hosts &>> $LOG
+	vim /var/lib/bind/arq.intra.hosts
+	named-checkzone $DOMAIN /var/lib/bind/arq.intra.hosts &>> $LOG
 echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #

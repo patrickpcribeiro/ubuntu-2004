@@ -52,7 +52,7 @@
 #	docker ps                   #verificando os processos do docker
 #
 # Informações que serão solicitadas na configuração via Web do Portainer.io
-# URL: http://pti.intra:9000
+# URL: http://arq.intra:9000
 # Username: admin;
 # Password: vaamonde@2018;
 # Confirm password: vaamonde@2018: Create User;

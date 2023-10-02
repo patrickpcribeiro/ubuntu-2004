@@ -20,9 +20,9 @@
 #
 # Bloco de configuração dos Hosts pertencentes ao grupo 'servers'
 [servers]
-172.16.1.20
-ptispo01ws01 ansible_host=172.16.1.20
-webserver ansible_host=172.16.1.20 ansible_user=vaamonde
+10.0.0.20
+arqeso01ws01 ansible_host=10.0.0.20
+webserver ansible_host=10.0.0.20 ansible_user=vaamonde
 #
 # Bloco de configuração das Variáveis de todos os Hosts do Inventário
 [all:vars]

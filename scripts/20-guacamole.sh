@@ -27,7 +27,7 @@
 # Site Oficial do RustDesk: https://github.com/rustdesk/rustdesk
 #
 # Informações que serão solicitadas na configuração via Web do Apache Guacamole
-# Navegador: https://pti.intra:8443/guacamole
+# Navegador: https://arq.intra:8443/guacamole
 # 			 Username: guacadmin
 # 			 Password: guacadmin
 #

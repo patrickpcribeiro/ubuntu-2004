@@ -28,20 +28,20 @@
 # Utilização do FTP Client no GNU/Linux ou Microsoft Windows
 # Linux Mint Terminal: Ctrl+Alt+T
 # 	touch linux.txt (change file timestamps)
-#	ftp ftp.pti.intra (Internet file transfer program)
+#	ftp ftp.arq.intra (Internet file transfer program)
 #		verbose
 #		status
 #		get robson.txt (ou mget)
 #		put linux.txt (ou mput)
 #	Gerenciador de Arquivos Neno
 #		Ctrl+L
-#			ftp://ftp.pti.intra
+#			ftp://ftp.arq.intra
 #				Usuário Registrado
 #					Usuário: ftpuser
 #					Senha..: pti@2018
 #	Cliente de FTP FileZilla
 #		sudo apt update && sudo apt install filezilla
-#			Host...: ftp.pti.intra
+#			Host...: ftp.arq.intra
 #			Usuário: ftpuser
 #			Senha..: pti@2018
 #			Porta..: 21
@@ -51,14 +51,14 @@
 #	precisar desativar o Firewall ou Criar Regras de Permissão de Envio e Recebimento do
 #	Protocolo FTP das portas 20 e 21 do FTP Client no Windows.
 # 	New-Item -Path '.\windows.txt' -ItemType File
-#	ftp ftp.pti.intra
+#	ftp ftp.arq.intra
 #		verbose
 #		status
 #		get robson.txt
 #		put windows.txt
 #	Gerenciador de Arquivos Windows Explorer
 #		Ctrl+L
-#			ftp://ftpuser@ftp.pti.intra
+#			ftp://ftpuser@ftp.arq.intra
 #				Usuário: ftpuser
 #				Senha..: pti@2018
 #

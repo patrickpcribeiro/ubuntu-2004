@@ -31,8 +31,8 @@
 #		Português Brasileiro (pt_BR)
 #	Continuar;
 # Configurações do Servidor:
-#		Domínio: pti.intra
-#		Server Host Name (FQDN): ptispo01ws01.pti.intra
+#		Domínio: arq.intra
+#		Server Host Name (FQDN): arqeso01ws01.arq.intra
 #		Porta do Console Admin: 9090
 #		Porta Segura do Console Admin: 9091: 
 #		Blowfish
@@ -54,7 +54,7 @@
 #		Padrão
 #	Continuar;
 # Conta do Administrador:
-#		Endereço de e-mail do Admin: vaamonde@pti.intra
+#		Endereço de e-mail do Admin: vaamonde@arq.intra
 #		Nova senha: pti@2018
 #		Confirme a senha: pti@2018
 #	Continuar;

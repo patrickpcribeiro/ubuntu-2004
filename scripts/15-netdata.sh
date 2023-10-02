@@ -29,7 +29,7 @@
 # Site oficial do Projeto MRTG: https://oss.oetiker.ch/mrtg/
 #
 # Informações que serão solicitadas na configuração via Web do Netdata
-# URL: https://pti.intra:19999
+# URL: https://arq.intra:19999
 #	Remember my choice: Yes
 #		Later, stay at the agent dashboard
 #

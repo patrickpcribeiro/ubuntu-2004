@@ -46,7 +46,7 @@
 # Zabbix server details
 #		Host: localhost
 #		Port: 10051
-#		Name: ptispo01ws01
+#		Name: arqeso01ws01
 #	Next step;
 # GUI settings
 #		Default time zone: System
@@ -79,9 +79,9 @@
 #		sudo vim /etc/zabbix/zabbix_agentd.conf
 #			INSERT
 #				#alterar as linhas 117, 171 e 182:
-#				Server=ptispo01ws01.pti.intra
-#				ServerActive=ptispo01ws01.pti.intra
-#				Hostname=ptispo01dt001.pti.intra
+#				Server=arqeso01ws01.arq.intra
+#				ServerActive=arqeso01ws01.arq.intra
+#				Hostname=ptispo01dt001.arq.intra
 #			ESC SHIFT : <Enter>
 #		sudo systemctl enable zabbix-agent
 #		sudo systemctl restart zabbix-agent
@@ -105,10 +105,10 @@
 #	Custom Setup
 #		On Zabbix Agent <Next>
 #	Zabbix Agent service configuration
-#		Host name: ptispo01dt002.pti.intra
-#		Zabbix server IP/DNS: ptispo01ws01.pti.intra
+#		Host name: ptispo01dt002.arq.intra
+#		Zabbix server IP/DNS: arqeso01ws01.arq.intra
 #		Agent listen port: 10050
-#		Server or Proxy for active checks: ptispo01ws01.pti.intra
+#		Server or Proxy for active checks: arqeso01ws01.arq.intra
 #		Off Enable PSK
 #		On Add agent location to the PATH <Next>
 #	Ready to install Zabbix Agent (64-bit) <Install>
@@ -125,8 +125,8 @@
 #	Hosts
 #		<Create host>
 #			Host
-#				Host name: ptispo01dt001.pti.intra
-#				Visible name: ptispo01dt001.pti.intra
+#				Host name: ptispo01dt001.arq.intra
+#				Visible name: ptispo01dt001.arq.intra
 #				Templates: <Select>
 #					Template group: <Select>
 #						Templates/Operating systems
@@ -135,7 +135,7 @@
 #					Discovered hosts <Select>
 #				Interfaces: Add:
 #					Agent: 
-#						DNS name: ptispo01dt001.pti.intra
+#						DNS name: ptispo01dt001.arq.intra
 #						Connect to: DNS
 #						Port: 10050
 #				Description: Desktop GNU/Linux Mint
@@ -147,8 +147,8 @@
 #	Hosts
 #		<Create host>
 #			Host
-#				Host name: ptispo01dt002.pti.intra
-#				Visible name: ptispo01dt002.pti.intra
+#				Host name: ptispo01dt002.arq.intra
+#				Visible name: ptispo01dt002.arq.intra
 #				Templates: <Select>
 #					Template group: <Select>
 #						Templates/Operating systems
@@ -157,7 +157,7 @@
 #					Discovered hosts <Select>
 #				Interfaces: Add:
 #					Agent: 
-#						DNS name: ptispo01dt002.pti.intra
+#						DNS name: ptispo01dt002.arq.intra
 #						Connect to: DNS
 #						Port: 10050
 #				Description: Desktop Microsoft Windows 10

@@ -26,18 +26,18 @@
 # Site Oficial do Projeto Drupal: https://www.drupal.org/
 #
 # Informações que serão solicitadas na configuração via Web do WordPress
-# URL: https://wp.pti.intra
+# URL: https://wp.arq.intra
 # 	Português do Brasil: Continuar;
 # 	Informação necessária
 #		Título do site: Bora para Prática;
 #		Nome de usuário: admin;
 #		Senha: pti@2018;
 #		Confirme a senha: Confirmar o uso de uma senha fraca;
-#		O seu e-mail: admin@pti.intra; 
+#		O seu e-mail: admin@arq.intra; 
 #		<Instalar WordPress>.
 #
 # Configurações Básicas do Wordpress e Instalação de Plugins
-# URL: https://wp.pti.intra/wp-login.php
+# URL: https://wp.arq.intra/wp-login.php
 #
 # Indicação de Temas e Plugins utilizados pelos Docentes/Professores e Profissional de TI:
 # José de Assis: 
@@ -82,7 +82,7 @@
 #			Wordfence Security: inclui um firewall de endpoint e um scanner de malware que foram construídos para proteger o WordPress.
 #				Instalar Agora
 #				Ativar
-#					Email: admin@pti.intra
+#					Email: admin@arq.intra
 #					Join Wordpress security? NO
 #					License: Yes <Continue>
 #					No Thanks
@@ -96,7 +96,7 @@
 #
 # Utilização do FTP Client no GNU/Linux ou Microsoft Windows
 #	Cliente de FTP FileZilla
-#			Host...: ftp.pti.intra
+#			Host...: ftp.arq.intra
 #			Usuário: wordpress
 #			Senha..: pti@2018
 #			Porta..: 990

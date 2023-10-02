@@ -18,7 +18,7 @@
 # centralizador de configurações do sistema, monitoração dos serviços e de servidores, 
 # fornecendo uma interface amigável, e que quando configurado com um servidor web, pode 
 # ser acessado de qualquer local, através de um navegador: 
-# Exemplo: https://(ip do servidor):(porta de utilização) - https://172.16.1.20:10000
+# Exemplo: https://(ip do servidor):(porta de utilização) - https://10.0.0.20:10000
 #
 # Usermin é uma interface baseada na web para webmail, alteração de senha, filtros de 
 # e-mail, fetchmail e muito mais. Ele é projetado para uso por usuários não-root regulares 

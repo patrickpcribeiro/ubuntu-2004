@@ -61,7 +61,7 @@
 # sudo ansible localhost -m setup
 #
 # Informações que serão solicitadas na configuração via Web do Rundeck
-# URL do Rundeck: http://pti.intra:4440/
+# URL do Rundeck: http://arq.intra:4440/
 # Nome de usuário: admin
 # Senha: admin: Entrar
 #
@@ -69,7 +69,7 @@
 # <Create a New Project>
 #	Create a new Project
 #		Detail
-#			Project Name: ptispo01ws01
+#			Project Name: arqeso01ws01
 #			Label: WebServer
 #			Description: Servidor Ubuntu Server
 #	<Criar>

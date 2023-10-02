@@ -44,13 +44,13 @@
 # Linux Mint Terminal: Ctrl+Alt+T
 #	sudo apt update && sudo apt install lftp
 # 	touch linux.txt (change file timestamps)
-#	lftp -u ftpuser ftps://ftp.pti.intra (Internet file transfer program security)
+#	lftp -u ftpuser ftps://ftp.arq.intra (Internet file transfer program security)
 #		history
 #		get robson.txt (ou mget)
 #		put linux.txt (ou mput)
 #	Cliente de FTP FileZilla
 #		sudo apt update && sudo apt install filezilla
-#			Host...: ftp.pti.intra
+#			Host...: ftp.arq.intra
 #			Usuário: ftpuser
 #			Senha..: pti@2018
 #			Porta..: 990
@@ -270,8 +270,8 @@ echo -e "Criando o arquivo CSR (Certificate Signing Request), confirme as mensag
 	# 	Locality Name (eg, city): Sao Paulo <-- pressione <Enter>
 	# 	Organization Name (eg, company): Bora para Pratica <-- pressione <Enter>
 	# 	Organization Unit Name (eg, section): Procedimentos em TI <-- pressione <Enter>
-	# 	Common Name (eg, server FQDN or YOUR name): pti.intra <-- pressione <Enter>
-	# 	Email Address: pti@pti.intra <-- pressione <Enter>
+	# 	Common Name (eg, server FQDN or YOUR name): arq.intra <-- pressione <Enter>
+	# 	Email Address: pti@arq.intra <-- pressione <Enter>
 	#
 	openssl req -new -$CRIPTOCERT -nodes -key /etc/ssl/private/vsftpd.key -out \
 	/etc/ssl/requests/vsftpd.csr -extensions v3_req -config /etc/ssl/vsftpd.conf

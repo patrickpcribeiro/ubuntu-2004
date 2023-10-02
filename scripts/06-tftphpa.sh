@@ -34,7 +34,7 @@
 # Linux Mint Terminal: Ctrl+Alt+T
 #	sudo apt update && sudo apt install tftp ou sudo apt install tftp-hpa
 #	touch linux.txt (change file timestamps)
-# 	tftp tftp.pti.intra (IPv4 Trivial File Transfer Protocol client)
+# 	tftp tftp.arq.intra (IPv4 Trivial File Transfer Protocol client)
 #		verbose
 #		status
 #		get robson.txt
@@ -49,8 +49,8 @@
 #	#02_ Verificar o status do firewall, Ativar ou Desativar o Windows Defender Firewall, 
 #	Desativar o Windows Defender Firewall
 #		New-Item -Path '.\windows.txt' -ItemType File
-# 		tftp -i tftp.pti.intra get robson.txt
-# 		tftp -i tftp.pti.intra put windows.txt
+# 		tftp -i tftp.arq.intra get robson.txt
+# 		tftp -i tftp.arq.intra put windows.txt
 #
 # VirtualBOX Protocolo PXE:
 #	Primeira etapa: Na inicialização da máquina virtual, clicar com o mouse no Logo do

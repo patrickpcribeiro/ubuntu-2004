@@ -24,9 +24,9 @@ key "rndc-key" {
 };
 
 // Configuração de Zona de Pesquisa Direta do Bind9 DNS Server
-zone "pti.intra" IN {
+zone "arq.intra" IN {
 	type master;
-	file "/var/lib/bind/pti.intra.hosts";
+	file "/var/lib/bind/arq.intra.hosts";
 	allow-update { key rndc-key; };
 	allow-query { any; };
 	allow-transfer { none; };

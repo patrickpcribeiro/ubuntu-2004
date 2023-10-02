@@ -69,7 +69,7 @@
 # Utilização do MySQL Client no GNU/Linux ou Microsoft Windows
 # Linux Mint Terminal: Ctrl+Alt+T
 # 	sudo apt update && sudo apt install mysql-client
-#	mysql -u root -p -h mysql.pti.intra (the MySQL command-line tool)
+#	mysql -u root -p -h mysql.arq.intra (the MySQL command-line tool)
 #
 # Microsoft Windows
 #	Download: https://dev.mysql.com/downloads/shell/
@@ -77,14 +77,14 @@
 #	Download: https://www.heidisql.com/
 #	Dependências do MySQL Workbench e Shell: https://docs.microsoft.com/pt-br/cpp/windows/latest-supported-vc-redist?view=msvc-170
 #	mysqlsh
-#		\connect --mysql root@mysql.pti.intra
+#		\connect --mysql root@mysql.arq.intra
 #		\status
 #		\quit
 #
 # Utilização do Links2 Client no GNU/Linux
 # Linux Mint Terminal: Ctrl+Alt+T
 # 	sudo apt update && sudo apt install links2
-#	links2 http://pti.intra (lynx-like alternative character mode WWW browser)
+#	links2 http://arq.intra (lynx-like alternative character mode WWW browser)
 #
 # Arquivo de configuração dos parâmetros utilizados nesse script
 source 00-parametros.sh
@@ -318,7 +318,7 @@ echo -e "Atualizando os arquivos de configuração do Apache2 e do PHP, aguarde.
 	cp -v conf/lamp/000-default.conf /etc/apache2/sites-available/ &>> $LOG
 	cp -v conf/lamp/charset.conf /etc/apache2/conf-available/ &>> $LOG
 	cp -v conf/lamp/php.ini /etc/php/7.4/apache2/ &>> $LOG
-	cp -v conf/lamp/awstats.pti.intra.conf /etc/awstats/ &>> $LOG
+	cp -v conf/lamp/awstats.arq.intra.conf /etc/awstats/ &>> $LOG
 	cp -v conf/lamp/{awstats,awstatsupdate-cron} /etc/cron.d/ &>> $LOG
 echo -e "Arquivos atualizados com sucesso!!!, continuando com o script...\n"
 sleep 5
@@ -466,10 +466,10 @@ echo -e "Editando o arquivo de teste teste.html, pressione <Enter> para continua
 echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #
-echo -e "Editando o arquivo de configuração awstats.pti.intra.conf, pressione <Enter> para continuar."
+echo -e "Editando o arquivo de configuração awstats.arq.intra.conf, pressione <Enter> para continuar."
 	# opção do comando read: -s (Do not echo keystrokes)
 	read -s
-	vim /etc/awstats/awstats.pti.intra.conf
+	vim /etc/awstats/awstats.arq.intra.conf
 echo -e "Arquivo editado com sucesso!!!, continuando com o script...\n"
 sleep 5
 #

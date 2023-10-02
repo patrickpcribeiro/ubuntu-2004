@@ -50,18 +50,18 @@ export DEBIAN_FRONTEND="noninteractive"
 # Declarando as variáveis utilizadas nas configurações de Rede do Servidor Ubuntu 
 #
 # Variável do Usuário padrão utilizado no Servidor Ubuntu desse curso
-USUARIODEFAULT="vaamonde"
+USUARIODEFAULT="patrickpcribeiro"
 #
 # Variável da Senha padrão utilizado no Servidor Ubuntu desse curso
 # OBSERVAÇÃO IMPORTANTE: essa variável será utilizada em outras variáveis desse curso
 SENHADEFAULT="pti@2018"
 #
 # Variável do Nome (Hostname) do Servidor Ubuntu desse curso
-NOMESERVER="ptispo01ws01"
+NOMESERVER="arqeso01ws01"
 #
 # Variável do Nome de Domínio do Servidor Ubuntu desse curso
 # OBSERVAÇÃO IMPORTANTE: essa variável será utilizada em outras variáveis desse curso
-DOMINIOSERVER="pti.intra"
+DOMINIOSERVER="arq.intra"
 #
 # Variável do Nome de Domínio NetBIOS do Servidor Ubuntu desse curso
 # OBSERVAÇÃO IMPORTANTE: essa variável será utilizada em outras variáveis desse curso
@@ -74,13 +74,13 @@ DOMINIONETBIOS="$(echo $DOMINIOSERVER | cut -d'.' -f1)"
 FQDNSERVER="$NOMESERVER.$DOMINIOSERVER"
 #
 # Variável do Endereço IPv4 principal (padrão) do Servidor Ubuntu desse curso
-IPV4SERVER="172.16.1.20"
+IPV4SERVER="10.0.0.20"
 #
 # Variável do Nome da Interface Lógica do Servidor Ubuntu Server desse curso
 # CUIDADO!!! o nome da interface de rede pode mudar dependendo da instalação do Ubuntu Server,
 # verificar o nome da interface com o comando: ip address show e mudar a variável INTERFACE com
 # o nome correspondente.
-INTERFACE="enp0s3"
+INTERFACE="ens160"
 #
 # Variável do arquivo de configuração da Placa de Rede do Netplan do Servidor Ubuntu
 # CUIDADO!!! o nome do arquivo de configuração da placa de rede pode mudar dependendo da 
@@ -144,7 +144,7 @@ PORTSHELLINABOX="4200"
 # 04. tail -f /var/log/dmesg | grep dhcpd = filtrando as mensagens de erros do ISC DHCP
 # 05. less /var/lib/dhcp/dhcpd.leases = filtrando os alugueis de endereços IPv4 do ISC DHCP
 # 06. sudo dhcp-lease-list = comando utilizado para mostrar os leases dos endereços IPv4 do ISC DHCP
-# 07. sudo tcpdump -vv -n -i enp0s3 port bootps or port bootpc = dump dos pacotes do ISC DHCP
+# 07. sudo tcpdump -vv -n -i ens160 port bootps or port bootpc = dump dos pacotes do ISC DHCP
 #
 # Variável de instalação do serviço de rede ISC DHCP Server
 DHCPINSTALL="isc-dhcp-server net-tools"
@@ -169,7 +169,7 @@ PORTDHCP="67"
 # 07. /etc/bind/named.conf.options = arquivo de configuração do Serviço do Bind9
 # 08. /etc/bind/named.conf.default-zones = arquivo de configuração das Zonas Padrão do Bind9
 # 09. /etc/bind/rndc.key = arquivo de configuração das Chaves RNDC de integração Bind9 e DHCP
-# 10. /var/lib/bind/pti.intra.hosts = arquivo de configuração da Zona de Pesquisa Direta
+# 10. /var/lib/bind/arq.intra.hosts = arquivo de configuração da Zona de Pesquisa Direta
 # 11. /var/lib/bind/172.16.1.rev = arquivo de configuração da Zona de Pesquisa Reversas
 # 12. /etc/default/named = arquivo de configuração do Daemon do Serviço do Bind9
 # 13. /etc/cron.d/dnsupdate-cron = arquivo de configuração das atualizações de Ponteiros
@@ -213,7 +213,7 @@ PORTRNDC="953"
 #
 # Arquivos de monitoramento (log) dos Serviços de Rede Bind9 e do DHCP utilizados nesse script
 # 01. dhcp-lease-list = comando utilizado para mostrar os leases dos endereços IPv4 do ISC DHCP
-# 02. less /var/lib/bind/pti.intra.hosts = arquivo de configuração da Zona de Pesquisa Direta
+# 02. less /var/lib/bind/arq.intra.hosts = arquivo de configuração da Zona de Pesquisa Direta
 # 03. less /var/lib/bind/172.16.1.rev = arquivo de configuração da Zona de Pesquisa Reversas
 #
 # Declarando a variável de geração da chave de atualização dos registros do Bind DNS Server 
@@ -349,7 +349,7 @@ PORTNFSPORTMAPPER="111"
 # 08. /etc/hosts.allow = arquivo de configuração de liberação de hosts por serviço
 # 09. /var/www/html/phpinfo.php = arquivo de geração da documentação do PHP
 # 10. /var/www/html/teste.html = arquivo de teste de páginas HTML
-# 11. /etc/awstats/awstats.pti.intra.conf = arquivo de configuração do serviço AWStats
+# 11. /etc/awstats/awstats.arq.intra.conf = arquivo de configuração do serviço AWStats
 # 12. /etc/cron.d/awstatsupdate-cron = arquivo de atualização das estatísticas do AWStats
 #
 # Arquivos de monitoramento (log) do Serviço de Rede LAMP Server utilizados nesse script

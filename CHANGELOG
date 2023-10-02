@@ -127,7 +127,7 @@ de acesso ao console continua tanto na versão: 1.36 como na versão 1.37, alter
 faltando um "i", alterado o PPA do ZoneMinder de: ppa:iconnor/zoneminder-master para: ppa:iconnor/zoneminder-proposed,
 corrigido as falhas de variáveis no script: 19-zoneminder.sh, alteração do caminho de criação da Base de Dados do
 Zabbix para: usr/share/doc/zabbix-sql-scripts/mysql/server.sql.gz, alteração do caminho para o envio do inventário do
-FusionInventory para o servidor de GLPI 9.x para: https://glpi9.pti.intra/plugins/fusioninventory/, acréscimo das
+FusionInventory para o servidor de GLPI 9.x para: https://glpi9.arq.intra/plugins/fusioninventory/, acréscimo das
 variáveis de download dos Agentes do GLPI Help Desk 10.0.x no script: 00-parametros.sh, e criação dos diretórios de
 download dos agentes no Apache2, atualização do comando do download dos Agentes do FusionInventory para não conflitar
 com os Agentes do GLPI Help Desk, atualização do script: 17-B-glpi10.sh com as opções de criar o diretório do download
@@ -153,7 +153,7 @@ escrita dos scripts, melhoria no cabeçalho e versões de software.
 Docker Compose 2.9.0, Rundeck 4.4.0, Nextcloud 24.0.3, Asterisk 19, Zabbix 6.2, OpenFire 4.7.3, OCS Invetory 2.10.
 Correção do BUG: 0021 Falha de status de inicialização do ISC-DHCP Server utilizando o Webmin.
 
-31/07/2022 - Robson Vaamonde - Atualização do arquivo de configuração: pti.intra.hosts com o CNAME do Netdata, criação
+31/07/2022 - Robson Vaamonde - Atualização do arquivo de configuração: arq.intra.hosts com o CNAME do Netdata, criação
 do arquivo de configuração: netdata-ssl.conf do Apache2 para suportar o Virtual Host do Netdata, Proxy e autenticação
 baseada no arquivo .htpasswd e utilização do TLS/SSL configurado no Apache2, alteração do arquivo de configuração do:
 netdata.conf para permitir somente as redes e nomes CNAME acessar o Dashboard do Netdata.
@@ -398,14 +398,14 @@ systemctl status, várias correções de Pt-BR nos scripts.
 melhorias na documentação dos arquivos de Zona de Pesquisa Direta e Reversa do Bind9 DNS Server, customização do
 arquivo: 50-default.conf do Rsyslog, habilitando recursos de Log do Cron, User, etc, arquivo adicionado no script
 do OpenSSH Server: 01-openssh.sh, correção do arquivo: awstatsupdate-cron em relação a falha de atualização das
-informações de estatísticas de acesso ao domínio pti.intra, criação dos arquivo: ntpdate e atualização do script: 
+informações de estatísticas de acesso ao domínio arq.intra, criação dos arquivo: ntpdate e atualização do script: 
 05-ntp.sh, correção do arquivo: wp-config.php referente a falha do tipo de arquivo CRLF convertido para LF.
 
 18/01/2022 - Robson Vaamonde - Novas opções de configuração do OpenSSH Server no arquivo: sshd_config ainda em fase 
 de testes e homologação (acrescentado no final do arquivo, opções comentadas), customização do arquivo: config.conf
 do Neofetch, criação do arquivo de CRON: neofetch-cron para atualizar o arquivo motd, atualização das opções no 
 arquivo: 01-openssh.sh, atualização do arquivo de configuração: dhcpd.conf com novas opções: get-lease-hostnames on;
-e ping-check on;, customização do arquivo: isc-dhcp-server habilitando somente o IPv4 e Interface de Rede enp0s3,
+e ping-check on;, customização do arquivo: isc-dhcp-server habilitando somente o IPv4 e Interface de Rede ens160,
 acréscimo do bloco para habilitar os principais módulos do Apache2 no script: 07-lamp.sh, acréscimo do aplicativo
 AWStats no script: 00-parametros.sh referente a instalação do LAMP-Server e acrescentado as opções de configuração
 no script: 07-lamp.sh.
@@ -444,11 +444,11 @@ do comando: read -s para remover a quebra de linha após editar os arquivos,
 09/01/2022 - Robson Vaamonde - Acréscimo da linha de configuração do Locale no script: 05-ntp.sh e criação da variável
 locale no script: 00-parametros.sh, criação do script 32-nextcloud.sh e testes de configuração do servidor e correções
 de Bugs nos scripts, alterado da localização dos arquivos do Webdav para: /var/www/webdav (devido a segurança de acesso),
-criação do CNAME: next no arquivo do Bind DNS pti.intra.hosts.
+criação do CNAME: next no arquivo do Bind DNS arq.intra.hosts.
 
 08/01/2022 - Robson Vaamonde - Criação dos arquivos de configuração do PostgreSQL: pg_hba.conf e postgresql.conf,
 alteração do script: 29-postgresql.sh com o acréscimo das linhas de atualização dos arquivos conf, criação do script
-30-nfs.sh e 31-webdav.sh, atualização do arquivo de configuração: pti.intra.hosts com os CNAME: nfs e webdav.
+30-nfs.sh e 31-webdav.sh, atualização do arquivo de configuração: arq.intra.hosts com os CNAME: nfs e webdav.
 
 23/12/2021 - Robson Vaamonde - Correções de vários scripts em relação ao PT-BR e melhorias na estrutura e documentação,
 finalizado a homologação dos scripts até 29-postgresql.sh. Preparação para a gravação das aulas em Janeiro de 2022,
@@ -501,9 +501,9 @@ agora trabalhando com source.list (webmin.list) recomendado pelo projeto não ba
 a lentidão no Download dos arquivos binários do Webmin, Usermin e Virtualmin) com isso o Webmin sempre será atualizado
 pelo Apt,  
 
-26/11/2021 - Robson Vaamonde - Acréscimo da linha: option wpad "http://172.16.1.20/wpad.dat"; no arquivo de configuração
+26/11/2021 - Robson Vaamonde - Acréscimo da linha: option wpad "http://10.0.0.20/wpad.dat"; no arquivo de configuração
 dhcpd.conf para suporte o protocolo WPAD (Web Proxy Autodiscovery Protocol), criação do CNAME: wpad no arquivo de
-configuração pti.intra.hosts
+configuração arq.intra.hosts
 
 25/11/2021 - Robson Vaamonde - Customização do script 15-glpi.sh e criação das variáveis no arquivo 00-parametros.sh,
 correções de PT-BR no arquivo 14-loganalyzer.sh.
@@ -572,11 +572,11 @@ arquivo named referente ao serviço do Bind9 DNS Server, adicionado a opção -4
 o arquivo named no script: 03-dns.sh, aplicado o Path de Correção da falha: rndc: connect failed: 127.0.0.1#953: 
 connection refused no no script: 03-dns.sh comando: chown -v root:bind /etc/bind/rndc.key. Correção da falha do Bind9 
 referente a mensagens no Systemctl de: file does not end with newline, adicionado uma linha no final do arquivo da Zona
-de Pesquisa direta: pti.intra.hosts (O Bind espera uma nova linha no final de seus arquivos de configuração. Adicione uma 
+de Pesquisa direta: arq.intra.hosts (O Bind espera uma nova linha no final de seus arquivos de configuração. Adicione uma 
 nova linha no final do arquivo após a entrada que você adicionou manualmente.). Correção da falha do Bind9 referente a 
 mensagens no Systemctl de: MX is a CNAME (illegal), alterado as configurações do MX Mail no arquivo de Zona de Pesquisa
-direta: pti.intra.hosts, retirado: 10 mail.pti.intra. deixado só: 10 mail, mudado a linha: mail IN CNAME ptispo01ws01
-para: mail IN A	172.16.1.20.
+direta: arq.intra.hosts, retirado: 10 mail.arq.intra. deixado só: 10 mail, mudado a linha: mail IN CNAME arqeso01ws01
+para: mail IN A	10.0.0.20.
 
 13/10/2021 - Robson Vaamonde - Substituição do comando dnssec-keygen pelo comando tsig-keygen no script: 04-dhcpdns.sh
 conforme documentação do MAN do comando dnssec-keygen o suporte ao HMAC-MD5 foi descontinuado a partir da versão 9.13
@@ -586,7 +586,7 @@ customização do arquivo de configuração: tftp-hpa.
 
 12/10/2021 - Robson Vaamonde - Customização dos scripts: 02-dhcp.sh, 03-dns.sh e 04-dhcpdns.sh e dos arquivos de 
 configuração dos serviços de: hostname, hosts, nsswitch.conf, 00-installer-config.yaml, dhcpd.conf, named.conf, 
-named.conf.local, named.conf.options, pti.intra.hosts, 172.16.1.rev e dnsupdate-cron.
+named.conf.local, named.conf.options, arq.intra.hosts, 172.16.1.rev e dnsupdate-cron.
 
 11/10/2021 - Robson Vaamonde - Customização do script: 01-openssh.sh e dos arquivos de configuração dos serviços de: 
 issue.net, hosts, hosts.allow, hosts.deny e sshd_config, todos customizados para a versão 20.04.x do Ubuntu Server.

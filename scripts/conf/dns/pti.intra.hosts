@@ -21,13 +21,13 @@
 ; 	86400 = tempo de atualizações caso o refresh falhe retenção 1 (um) dia
 ; 	2419200 = tempo de expiração do slave caso não se contate com o master expiração 4 (quatro) semanas
 ; 	604800 = tempo de vida das repostas negativas do servidor mínimo retenção de 1 (uma) semana
-; @ IN 	NS	ptispo01ws01.pti.intra. = configuração do Name Server (Nome do Servidor) do domínio.
+; @ IN 	NS	arqeso01ws01.arq.intra. = configuração do Name Server (Nome do Servidor) do domínio.
 ; @ IN 	MX	10 mail = configuração do Mail Exchanger (registros de troca de e-mail) do domínio
 ; @ IN	TXT	"v=spf1 a mx -all" = registro de Texto com informações do SPF (Sender Policy Framework)
 
-$ORIGIN pti.intra.
+$ORIGIN arq.intra.
 $TTL 3600 ; 1 hour
-@		IN		SOA		ptispo01ws01.pti.intra. vaamonde.pti.intra. (
+@		IN		SOA		arqeso01ws01.arq.intra. vaamonde.arq.intra. (
 				1 ; serial
 				604800 ; refresh (1 week)
 				86400 ; retry (1 day)
@@ -35,41 +35,41 @@ $TTL 3600 ; 1 hour
 				604800 ; minimum (1 week)
 				)
 ;
-@               IN 		NS		ptispo01ws01.pti.intra.
+@               IN 		NS		arqeso01ws01.arq.intra.
 @               IN 		MX		10 mail
 @               IN		TXT		"v=spf1 a mx -all"
 ;
-pti.intra.      IN 		A 		172.16.1.20
-ptispo01ws01    IN 		A		172.16.1.20
-ptispo01fw01    IN 		A		172.16.1.254
-mail            IN 		A 		172.16.1.20
+arq.intra.      IN 		A 		10.0.0.20
+arqeso01ws01    IN 		A		10.0.0.20
+ptispo01fw01    IN 		A		10.0.0.254
+mail            IN 		A 		10.0.0.20
 ;
-cloud           IN		CNAME	ptispo01ws01
-ftp             IN		CNAME	ptispo01ws01
-grafana         IN		CNAME	ptispo01ws01
-glpi9           IN		CNAME	ptispo01ws01
-glpi10          IN		CNAME	ptispo01ws01
-helpdesk        IN		CNAME	ptispo01ws01
-imap4           IN		CNAME	ptispo01ws01
-imap            IN		CNAME	ptispo01ws01
-loganalyzer     IN		CNAME	ptispo01ws01
-log             IN		CNAME	ptispo01ws01
-mysql           IN		CNAME	ptispo01ws01
-netdata         IN		CNAME	ptispo01ws01
-next            IN		CNAME	ptispo01ws01
-nfs             IN		CNAME	ptispo01ws01
-ntp             IN		CNAME	ptispo01ws01
-own             IN		CNAME	ptispo01ws01
-pop3            IN		CNAME	ptispo01ws01
-portal          IN		CNAME	ptispo01ws01
-pxe             IN		CNAME	ptispo01ws01
-smtp            IN		CNAME	ptispo01ws01
-ssh             IN		CNAME	ptispo01ws01
-suporte         IN		CNAME	ptispo01ws01
-tftp            IN		CNAME	ptispo01ws01
-webdav          IN		CNAME	ptispo01ws01
-wpad            IN		CNAME	ptispo01ws01
-wp              IN		CNAME	ptispo01ws01
-www             IN		CNAME	ptispo01ws01
-zm              IN		CNAME	ptispo01ws01
+cloud           IN		CNAME	arqeso01ws01
+ftp             IN		CNAME	arqeso01ws01
+grafana         IN		CNAME	arqeso01ws01
+glpi9           IN		CNAME	arqeso01ws01
+glpi10          IN		CNAME	arqeso01ws01
+helpdesk        IN		CNAME	arqeso01ws01
+imap4           IN		CNAME	arqeso01ws01
+imap            IN		CNAME	arqeso01ws01
+loganalyzer     IN		CNAME	arqeso01ws01
+log             IN		CNAME	arqeso01ws01
+mysql           IN		CNAME	arqeso01ws01
+netdata         IN		CNAME	arqeso01ws01
+next            IN		CNAME	arqeso01ws01
+nfs             IN		CNAME	arqeso01ws01
+ntp             IN		CNAME	arqeso01ws01
+own             IN		CNAME	arqeso01ws01
+pop3            IN		CNAME	arqeso01ws01
+portal          IN		CNAME	arqeso01ws01
+pxe             IN		CNAME	arqeso01ws01
+smtp            IN		CNAME	arqeso01ws01
+ssh             IN		CNAME	arqeso01ws01
+suporte         IN		CNAME	arqeso01ws01
+tftp            IN		CNAME	arqeso01ws01
+webdav          IN		CNAME	arqeso01ws01
+wpad            IN		CNAME	arqeso01ws01
+wp              IN		CNAME	arqeso01ws01
+www             IN		CNAME	arqeso01ws01
+zm              IN		CNAME	arqeso01ws01
 

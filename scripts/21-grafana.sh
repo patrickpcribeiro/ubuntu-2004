@@ -38,7 +38,7 @@
 #		Add data source
 #			SQL
 #				MySQL
-#					Name: ptispo01ws01
+#					Name: arqeso01ws01
 #					MySQL Connection
 #						Host: localhost:3306
 #						Database: dbagenda
@@ -50,7 +50,7 @@
 #	Dashboards
 #		<+ Add visualization>
 #			Query1
-#				Data source: ptispo01ws01
+#				Data source: arqeso01ws01
 #			Builder
 #				Dataset: dbagenda   Tabela: contatos
 #				Columm: nome   Aggregation: COUNT (Contar)   Alias: Choose (Default)
@@ -66,7 +66,7 @@
 #		<Add>
 #			Visualization
 #			Query1
-#				Data source: ptispo01ws01
+#				Data source: arqeso01ws01
 #			Builder
 #				Dataset: dbagenda   Tabela: contatos
 #				Columm: nome   Aggregation: Choose (Default)   Alias: Choose (Default)
