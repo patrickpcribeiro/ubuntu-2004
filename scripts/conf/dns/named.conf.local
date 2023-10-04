@@ -37,7 +37,7 @@ zone "arq.intra" IN {
 // Configuração da Zona de Pesquisa Reversa do Bind9 DNS Server
 zone "1.16.172.in-addr.arpa" IN {
 	type master;
-	file "/var/lib/bind/172.16.1.rev";
+	file "/var/lib/bind/10.0.0.rev";
 	allow-update { key rndc-key; };
 	allow-query { any; };
 	allow-transfer { none; };

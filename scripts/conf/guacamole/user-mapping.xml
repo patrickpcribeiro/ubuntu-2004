@@ -39,7 +39,7 @@
         <!-- configuração do acesso remoto via RDP-->
         <connection name="Windows-7-RDP">
             <protocol>rdp</protocol>
-            <param name="hostname">172.16.1.103</param>
+            <param name="hostname">10.0.0.103</param>
             <param name="port">3389</param>
             <param name="username">vaamonde</param>
             <param name="ignore-cert">true</param>
@@ -50,7 +50,7 @@
         <!-- configuração do acesso remoto via RDP-->
         <connection name="Windows-10-RDP">
             <protocol>rdp</protocol>
-            <param name="hostname">172.16.1.104</param>
+            <param name="hostname">10.0.0.104</param>
             <param name="port">3389</param>
             <param name="username">vaamonde</param>
             <param name="ignore-cert">true</param>
@@ -58,7 +58,7 @@
         <!-- configuração do acesso remoto via VNC-->
         <connection name="Linux-Mint-VNC">
             <protocol>vnc</protocol>
-            <param name="hostname">172.16.1.101</param>
+            <param name="hostname">10.0.0.101</param>
             <param name="port">5900</param>
         </connection>
 
